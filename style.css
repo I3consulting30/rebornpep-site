@@ -165,3 +165,7 @@ footer.site a{color:var(--muted-dark)}
 .phone::before,.feature .shot::before{content:"";position:absolute;top:18px;left:50%;transform:translateX(-50%);width:30%;height:22px;border-radius:12px;background:#0A090A;z-index:3}
 .phone{border-radius:40px}
 .phone img{border-radius:32px}
+/* Écran bien contenu dans le cadre */
+.phone,.feature .shot{overflow:hidden;isolation:isolate}
+.phone img,.feature .shot img{display:block;width:100%;height:auto;aspect-ratio:390/844;object-fit:cover;background:#fff}
+.feature .shot.doc img{aspect-ratio:auto;object-fit:initial;background:none}
